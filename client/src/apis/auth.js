@@ -1,5 +1,4 @@
 import axios from 'axios';
-// import { toast } from 'react-toastify';
 const API = (token) =>
   axios.create({
     baseURL: process.env.REACT_APP_SERVER_URL,
@@ -13,13 +12,7 @@ export const loginUser = async (body) => {
     console.log('error in loginuser api');
   }
 };
-export const googleAuth = async (body) => {
-  try {
-    return await axios.post(`${url}/api/google`, body);
-  } catch (error) {
-    console.log(error);
-  }
-};
+
 export const registerUser = async (body) => {
   try {
     return await axios.post(`${url}/auth/register`, body);
