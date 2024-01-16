@@ -1,0 +1,23 @@
+.typing-indicator {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #4CAF50; /* Adjust color as needed */
+    border-radius: 50%;
+    margin: 0 4px;
+    animation: typingAnimation 1s infinite;
+  }
+  
+  @keyframes typingAnimation {
+    0%, 50%, 100% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-5px);
+    }
+  }
+  
